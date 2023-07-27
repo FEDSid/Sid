@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26th may assignment</title>
+    <script>
+        function dochange(){
+        document.getElementById("img").src="burger.jpg";
+       }
+        function revert(){
+        document.getElementById("img").src="foodcourt.jpg";}
+        function changefont(){
+            var font1=document.getElementsByTagName("li");
+            for (var i=0;i<font1.length;i++){
+                font1[i].style.fontFamily="Times New Roman";
+                font1[i].style.fontSize="large";
+            }
+        }
+        function changecolor(){
+           document.getElementById("p1").style.backgroundColor="powderblue";
+           document.getElementById("p1").style.fontFamily="cursive";
+           document.getElementById("p1").style.color="black";
+           document.getElementById("p2").style.backgroundColor="orange";
+           document.getElementById("p2").style.fontFamily="cursive";
+           document.getElementById("p2").style.color="black";
+           document.getElementById("p3").style.backgroundColor="powderblue";
+           document.getElementById("p3").style.fontFamily="cursive";
+           document.getElementById("p3").style.color="black";
+           
+    }
+    function dochangewandh(){
+        document.getElementById("img1").src="tacos.jpg";
+        document.getElementById("img1").style.height="400px";
+        document.getElementById("img1").style.width="500px";} 
+    
+        function revertwandh(){
+        document.getElementById("img1").src="foodcourt.jpg"
+        document.getElementById("img1").style.height="200px";
+        document.getElementById("img1").style.width="300px";}
+        
+    </script>
+</head>
+<body style="color: white; background-image: url(gradient\ background2.jpg); background-repeat: no-repeat; background-size: cover; font-family: cursive"><center>
+    <nav>
+        <a href="validation.html"><button type="button" style="border-radius: 25px; background-color: black; color: white;border-color: darkgoldenrod; margin-right: 100%;">BACK </button></a>
+    </nav>
+    <h3><u>1.Change the image on Mouseover and Mouseout</u></h3>
+    <img src="foodcourt.jpg" alt="foodcourt" height="200px" width="300px" id="img" onmouseover="dochange()" onmouseout="revert()" style="border: 8px;border-style: groove; border-color: goldenrod;">
+    <br><br>
+    <hr><hr>
+
+    <h3><u>2.Change font of 5 li on button click</u></h3>
+    <ol>
+        <li>Ayush</li>
+        <li>Ashish</li>
+        <li>Vaibhav</li>
+        <li>Siddhant</li>
+        <li>Renuka</li>
+    </ol>
+    <input type="button"  value="Change font" onclick="changefont()" style="border-radius: 25px; background-color: black; color: white;border-color: darkgoldenrod;">
+    <hr><hr>
+
+    <h3><u>3.Change the background-color on button click</u></h3>
+    <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quo fugiat molestiae officia asperiores provident, vitae sapiente dolor itaque natus amet vero sint optio sit consectetur ut ducimus facilis earum modi atque praesentium eveniet odit.</p><p id="p2">Nisi nostrum autem, iusto possimus libero enim incidunt fuga voluptates rerum mollitia hic minima, ipsum accusantium voluptatibus error illo animi omnis magni eveniet facilis.</p><p id="p3">Excepturi fugiat quam, ipsum id dignissimos voluptatem eos aut ratione architecto magni commodi deleniti nemo explicabo sunt adipisci hic harum totam enim maxime modi earum, sit cupiditate. Exercitationem atque sit distinctio similique fugit saepe ea dolore porro aspernatur, in nam.</p>
+    <input type="button" value="Change color" onclick="changecolor()" style="border-radius: 25px; background-color: black; color: white;border-color: darkgoldenrod;">
+    <br>
+    <hr><hr>
+
+    <h3><u>4.Increase the width and height of the image</u></h3>
+    <img src="foodcourt.jpg" alt="foodcourt" height="200px" width="300px" id="img1" onmouseover="dochangewandh()" onmouseout="revertwandh()" style="border: 8px;border-style: groove; border-color: goldenrod;">
+</center>
+</body>
+</html>
